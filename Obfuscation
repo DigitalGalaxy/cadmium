@@ -1,6 +1,6 @@
 # So, Cadmium is great.  It's fantastic software.  But, whoever wrote it must have had something against inline comments.
 
-#LEt's talk about inline comments for a minute.    If somebody  else besides you is ever, EVER going to look at, attempt to debug,
+#Let's talk about inline comments for a minute.    If somebody  else besides you is ever, EVER going to look at, attempt to debug,
 # or modify your code....they are going to have to expend a lot of effort trying to decipher your code.  Let's say this person
 #isn't that familiar with your language of choice.  Maybe they are new to your style of coding.  Maybe they have a hangover and
 #are having a hard time concentrating.  Maybe they just have no idea what you are trying to do in a particular spot and are 
@@ -13,7 +13,7 @@
 #world.  So, give the poor monkey brains of your fellow humans a break by providing a tiny, tiny bit of conceptual scaffolding
 #with a measly inline comment.  "This method does this thing." is really all you need. Pretend you are explaining this code to 
 #somebody who a)is less skilled than yourself, and b) has a really bad hangover, and who still somehow needs to muddle through 
-#the innards of the brilliant logic you have created.  
+#the innards of the brilliant logic you have created in spite of these two things.  
 
 #Comments.  Please. This Cadmium program is amazing.  It is also going to take me longer to make sense of than it took the devs 
 #to actually write it.  Comments...
