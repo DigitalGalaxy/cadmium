@@ -16,6 +16,17 @@
 package com.meltmedia.cadmium.deployer;
 
 import com.meltmedia.cadmium.core.commands.AbstractMessageBean;
+/*  
+this is what is called a "pojo" or "plain old Java object"  This is passing information from one method to another.  
+It is not actually doing anything by itself. The question: where it is pulling from, and which method wants this information?
+
+
+To find this out, we can either search github for this information with the "t" command, or we can use inlellij to scrounge through the code and find it.
+
+
+
+Why are we passing this information?  Why not request it directly?  Are we segragatig it to avoid it getting contaminated?  Are we asking for a separate copy?
+*/
 
 public class DeployRequest extends AbstractMessageBean {
   protected String domain;
@@ -29,6 +40,32 @@ public class DeployRequest extends AbstractMessageBean {
   public String getDomain() {
     return domain;
   }
+  
+  
+  /* RRAAAGGGGEEEEE
+  
+  THIS IS SOOO CONFUSING
+  
+  public void setDomain(String domain) {
+    this.domain = domain
+
+why are different varaibles named the same thing!?!!?  Blarg!!!  This is mostly stylistic difference as opposed to an actual problem 
+or poor code, but this is still a huge drag.  Why would you name 2 different variables the same thing, ever????? That's just asking to 
+get them mixed up!  I know they are just local to this 3-line method, but still!  Ugh!  Just a slight variation is fine.
+
+maybe, oh I don't know:
+
+public void setDomain(String domainIn) {
+    this.domain = domainIn
+
+Again, not a real problem or bad code, just a diffenre style, but it just makes me rage.  It's confusing.  Needlessly confusing.
+It's 4 characters, people.  4 characters.  How many calories does it take for your cells to create ATP, to move your fingers 4 extra times, 
+versus how many calories it takes neurons to figure out that is going on here?  I don't know, but it's frustarting. 
+
+*/
+  
+
+
   public void setDomain(String domain) {
     this.domain = domain;
   }
